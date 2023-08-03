@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+/* App.css */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
+}
+
+/* Add styles for the container */
+.logo-sidebar-container {
+ flex:1;
+  display: flex;
+  
+  align-items: stretch;
+  
+  background-color: #c6c6c8;
+  
+   /* Adjust margin to provide separation between the logo-sidebar-container and the description */
+}
+.logo {
+  height: 100px; /* Adjust the height of the logo */
+  width: auto;
+  
+}
+
+/* Update the logo and sidebar styles */
+.logo-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  flex:1; 
+  max-width: min(30%, 300px);
+  /* Take up the full width */
+  text-align: center;
+  background: linear-gradient(to bottom,#16a5e1,#42aedd,#585859) ;
+  overflow-y: auto;
+  
+  padding:20px;/* Enable scrolling if content exceeds sidebar height */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Adjust the gap between sidebar and description page */
+
+/* Sidebar styles */
+.sidebar h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.sidebar li {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+/* Style for sidebar options */
+.option-box {
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #17465d;
+  color: #f4f0f0;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  overflow-y: auto;
+  
+}
+.option-box:hover {
+  background-color: #636262; /* Highlight on hover */
+}
+/* .option-box a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+} */
+/* Highlight the selected page */
+
+.option-box.active,.option-box.active span {
+  background-color: #7a7c7e; 
+  font-weight: bold;/* Customize the color as desired */
+}
+
+.option-box img {
+  width: 30px;
+  height: 30px;
+  object-fit: fill;
+}
+
+/* Content styles */
+.content {
+  flex: 1; /* Take up the remaining available space */
+  padding: 20px;
+  background:linear-gradient(to bottom,#4444445b,hsla(0, 100%, 100%, 0.357)) ;
+  
+  overflow-y: auto;
+   /* Add some space between sidebar and content */
+  box-shadow: 0 0 10px rgba(86, 84, 84, 0.1); 
+}
+
+.content h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.content p {
+  line-height: 1.6;
+}
+
+.product{
+padding: 20px;
+flex: 1; 
+}
+
+.content button {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.content button:hover {
+  background-color: #e1e1e1;
+}
+
+.content button.active {
+  background-color: #bbd5ef;
+  font-weight: bold;
+}
+/* ... Additional styles ... */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #16a5e1;
+  padding: 5px 20px;
+}
+
+.top-bar-link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.top-bar .logo-container {
+  flex: 0 0 auto;
+}
+.top-bar-link:hover {
+  color: #000;
 }
