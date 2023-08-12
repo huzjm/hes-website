@@ -23,9 +23,11 @@ body,
   
    /* Adjust margin to provide separation between the logo-sidebar-container and the description */
 }
+
 .logo {
   height: 100px; /* Adjust the height of the logo */
   width: auto;
+  
   
 }
 
@@ -39,10 +41,11 @@ body,
 
 .sidebar {
   flex:1; 
-  max-width: min(30%, 300px);
+  max-width: min(20%, 300px);
   /* Take up the full width */
   text-align: center;
-  background: linear-gradient(to bottom,#16a5e1,#42aedd,#585859) ;
+  background: linear-gradient(to bottom,#ffffff,#a2a2a2) ;
+                          
   overflow-y: auto;
   border: 1px solid black;
   padding:20px;/* Enable scrolling if content exceeds sidebar height */
@@ -78,21 +81,23 @@ body,
   gap: 10px;
   cursor: pointer;
   text-decoration: none;
-  background-color: #17465d;
-  color: #f4f0f0;
-  font-weight: bold;
+  background-color: #16a5e1;
+  color: #ffffff;
+  ;border: 2px solid #a2a2a2;
   transition: background-color 0.2s;
   overflow-y: auto;
   
 }
 .option-box:hover {
-  background-color: #636262; /* Highlight on hover */
+  background-color: #1289b5; /* Highlight on hover */
 }
 
 
-.option-box.active,.option-box.active span {
-  background-color: #7a7c7e; 
-  font-weight: bold;/* Customize the color as desired */
+.option-box.active{
+  background-color: #1289b5; 
+  font-weight: bold;border: 2px solid #000000;
+  font-size: large;
+  /* Customize the color as desired */
 }
 
 .option-box img {
@@ -105,11 +110,14 @@ body,
 .content {
   flex: 1; /* Take up the remaining available space */
   padding: 20px;
-  background:linear-gradient(to bottom,#4444445b,hsla(0, 100%, 100%, 0.357)) ;
-  
+  background:linear-gradient(to bottom,#ffffff,hsla(0, 0%, 100%, 0.357)) ;
+  border: 1px solid black;
   overflow-y: auto;
    /* Add some space between sidebar and content */
   box-shadow: 0 0 10px rgba(86, 84, 84, 0.1); 
+  background-color: #fff;
+    border: 2px solid #000000;
+    border-radius: 20px;
 }
 
 .content h1 {
@@ -165,7 +173,7 @@ flex: 1;
 .top-bar-link {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: bold;
 }
 

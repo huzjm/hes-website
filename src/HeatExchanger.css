@@ -1,16 +1,18 @@
 
 .heat-exchanger {
-    display: flex;
-  }
+  display: flex;
+  flex-direction: row; /* Change to row */
+  align-items: flex-start; /* Align items at the top */
+}
   
   .introduction {
     flex: 1;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f8f8f8; /* Update the background color */
     border-radius: 10px;
     margin-right: 20px;
-    overflow: hidden; /* Hide the detailed-info section initially */
-    transition: flex 2s ease; /* Add a smooth transition effect */
+    overflow: hidden;
+    transition: flex 2s ease;
   }
   
   .introduction h2 {
