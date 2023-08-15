@@ -5,11 +5,7 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="logo-container">
-        <NavLink to="/">
-          <img src='/image/Huzefa Engineering-01color.png' alt="Logo" className="logo" />
-        </NavLink>
-      </div>
+      
       <h2>Products</h2>
       <ul>
         <li>

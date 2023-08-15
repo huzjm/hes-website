@@ -6,7 +6,7 @@ const TopBar = () => {
     <div className="top-bar">
       <div className="logo-container">
         <NavLink to="/">
-         
+          <img src='/image/Huzefa Engineering-01color.png' alt="Logo" className="logo" />
         </NavLink>
       </div>
       <div className="top-bar-links">

@@ -4,6 +4,7 @@ import './App.css'
 const Homepage = () => {
   return (<div className="content">
     <div className="homepage">
+    <img src='/image/Huzefa Engineering-01color.png' alt="Logo" className="logo" />
       <div className="hero-section">
         <div className="hero-content">
           <h1>Welcome to Huzefa Engineering Services</h1>

@@ -44,10 +44,13 @@ body,
   max-width: min(20%, 300px);
   /* Take up the full width */
   text-align: center;
-  background: linear-gradient(to bottom,#ffffff,#a2a2a2) ;
-                          
+  background: linear-gradient(to bottom,#ffffff,#c6c6c8) ;
+  /* background-image: url('../public/image/sidebar-image.png');     */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat;   
+  background-color: #fff;                
   overflow-y: auto;
-  border: 1px solid black;
+  border: 2px solid #000;
   padding:20px;/* Enable scrolling if content exceeds sidebar height */
 }
 
@@ -72,6 +75,16 @@ body,
   margin-bottom: 5px;
 }
 
+.sidebar-image {
+  margin-bottom: 0; /* Push the image to the bottom of the sidebar */
+  text-align: center; /* Center the image horizontally */
+}
+
+.sidebar-image img {
+  max-width: 100%;
+  height: auto; /* Adjust the image height while maintaining aspect ratio */
+}
+
 /* Style for sidebar options */
 .option-box {
   padding: 15px;
@@ -81,22 +94,24 @@ body,
   gap: 10px;
   cursor: pointer;
   text-decoration: none;
-  background-color: #16a5e1;
-  color: #ffffff;
-  ;border: 2px solid #a2a2a2;
+  background-color: #ffffff;
+  color: #16a5e1;
+  border: 2px solid #16a5e1;
   transition: background-color 0.2s;
   overflow-y: auto;
+  font-weight: bold;
   
 }
 .option-box:hover {
-  background-color: #1289b5; /* Highlight on hover */
+  background-color: #5fbae2; /* Highlight on hover */
 }
 
 
 .option-box.active{
-  background-color: #1289b5; 
-  font-weight: bold;border: 2px solid #000000;
+  background-color: #67bce0; 
+  font-weight: bold;border: 2px solid #117dab;
   font-size: large;
+  color:#fff;
   /* Customize the color as desired */
 }
 
@@ -110,14 +125,13 @@ body,
 .content {
   flex: 1; /* Take up the remaining available space */
   padding: 20px;
-  background:linear-gradient(to bottom,#ffffff,hsla(0, 0%, 100%, 0.357)) ;
-  border: 1px solid black;
+  
+  border: 1px solid rgb(182, 182, 182);
   overflow-y: auto;
    /* Add some space between sidebar and content */
-  box-shadow: 0 0 10px rgba(86, 84, 84, 0.1); 
+  
   background-color: #fff;
-    border: 2px solid #000000;
-    border-radius: 20px;
+    
 }
 
 .content h1 {
@@ -138,6 +152,7 @@ body,
 .product{
 padding: 20px;
 flex: 1; 
+background-color: #fff;
 }
 
 .content button {
@@ -166,14 +181,14 @@ flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #16a5e1;
+  background-color: #fff;
   padding: 5px 20px;
 }
 
 .top-bar-link {
   margin-left: 20px;
   text-decoration: none;
-  color: #ffffff;
+  color: #16a5e1;
   font-weight: bold;
 }
 
