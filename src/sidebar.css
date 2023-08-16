@@ -1,0 +1,226 @@
+.sidebar {
+    padding: 10px;
+    flex:1; 
+    max-width: min(20%, 300px);
+    /* Take up the full width */
+    text-align: center;
+    background: linear-gradient(to bottom,#ffffff,#fff) ;
+    /* background-image: url('../public/image/sidebar-image.png');     */
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat;   
+    background-color: #fff; 
+              
+    overflow-y: auto;
+    border: 1px solid #cadcea;
+    
+    /* Enable scrolling if content exceeds sidebar height */
+  }
+  
+  
+  
+  /* Adjust the gap between sidebar and description page */
+  
+  /* Sidebar styles */
+  .sidebar h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .sidebar li{
+    cursor: pointer;
+    
+    
+  }
+  
+  
+  .sidebar-image {
+    margin-bottom: 0; /* Push the image to the bottom of the sidebar */
+    text-align: center;
+    max-width: 35px;
+    height: auto; 
+    filter:grayscale(100%);
+    transition: filter 0.4s;
+     /* Center the image horizontally */
+  }
+
+  .active-image {
+    /* Apply a sepia filter when active */
+    filter: grayscale(0%);
+  }
+  
+  /* Add a hover effect to change the color on hover */
+  .sidebar-image:hover {
+    filter:grayscale(0%);
+  }
+  
+  
+  
+  
+  /* Style for sidebar options */
+  .option-box {
+    padding: 15px;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: left;
+    color: #35A0F1;
+    border-top: 2px solid #35A0F1;
+    transition: background-color 0.2s;
+    overflow-y: auto;
+    
+    
+  }
+  .option-box:hover {
+    border-top: 6px solid #35A0F1;font-weight: bold;/* Highlight on hover */
+  }
+  
+  
+  .option-box.active{
+    /* background: linear-gradient(to bottom,#23a1d7,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff) ; */
+    font-weight: bold;border-top: 6px solid #35A0F1;
+    font-size: large;color:#35A0F1;
+     
+    /* Customize the color as desired */
+  }
+  
+  .option-box img {
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+  }
+  
+
+  .sub-menu {
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.2s,font-size 0.2s,color 0.2s;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 13px;
+    
+    padding: 20px;
+    
+  }
+  
+  
+  .sub-menu li {
+    margin-bottom: 5px;
+    text-align: right;
+    margin-right:10px
+  }
+  
+  .sub-menu a {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: background-color 0.2s,font-size 0.2s,color 0.2s;
+    font-size: 11px;
+    
+    
+  }
+  .sub-menu ul {
+    list-style: none;
+    padding: 0;
+    
+    
+  }
+  
+  .sub-menu a:hover {
+    font-weight: bold;
+    font-size: 12px;color:#7d8183;
+    
+  }
+
+  .sub-menu a.active {
+    font-weight: bold;
+    font-size: 13px;color:#35A0F1;
+    
+  }
+
+
+
+  .main-category {
+    padding: 15px;
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #aaaaaa;
+    
+    transition: background-color 0.4s,font-size 0.2s,color 0.4s;
+    overflow-y: auto;
+    text-decoration: none; /* Remove text decoration */
+    justify-content: space-between; 
+    font-size: 18px;
+    font-weight: bold;/* Adjust alignment of dropdown arrow */
+  }
+
+  .category-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items on the right side */
+    position: relative;
+  }
+  
+  .has-image .category-label {
+    margin-left: 10px; /* Adjust the spacing between image and label */
+  }
+  .main-category span {
+    font-size: 20px; /* Adjust arrow size */
+    text-decoration: none; /* Remove text decoration */
+  }
+  
+  .main-category:hover {
+    
+    font-weight: bold;
+    font-size: 19px;
+    background-color: #efefef; 
+    color: #35A0F1;/* Highlight on hover */
+  }
+  .main-category:hover .sidebar-image,.active-image{
+    filter:grayscale(20%);
+  }
+ 
+  .main-category.active{
+    border-top: 2px solid #35A0F1;
+    font-size: 20px;
+    color: #35A0F1;
+    font-weight: bold;
+    
+    
+  }
+  .main-category.active + .sub-menu  {
+    background-color: #ffffff;
+    border-bottom: 1px solid #35A0F1
+    
+    
+    /* Highlight on hover */
+  }
+
+  .main-category a {
+    width: 100%;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #35A0F1;
+    cursor: pointer;
+    color: #35A0F1;
+    
+    transition: background-color 0.2s;
+    overflow-y: auto;
+    text-decoration: none;
+     /* Remove text decoration */
+    justify-content: space-between; 
+  }
+
+  

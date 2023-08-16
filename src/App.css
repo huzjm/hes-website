@@ -39,94 +39,13 @@ body,
   
 }
 
-.sidebar {
-  flex:1; 
-  max-width: min(20%, 300px);
-  /* Take up the full width */
-  text-align: center;
-  background: linear-gradient(to bottom,#ffffff,#c6c6c8) ;
-  /* background-image: url('../public/image/sidebar-image.png');     */
-  background-position: top; /* Center the image */
-  background-repeat: no-repeat;   
-  background-color: #fff;                
-  overflow-y: auto;
-  border: 2px solid #000;
-  padding:20px;/* Enable scrolling if content exceeds sidebar height */
-}
-
-
-/* Adjust the gap between sidebar and description page */
-
-/* Sidebar styles */
-.sidebar h2 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  
-}
-
-.sidebar li {
-  cursor: pointer;
-  margin-bottom: 5px;
-}
-
-.sidebar-image {
-  margin-bottom: 0; /* Push the image to the bottom of the sidebar */
-  text-align: center; /* Center the image horizontally */
-}
-
-.sidebar-image img {
-  max-width: 100%;
-  height: auto; /* Adjust the image height while maintaining aspect ratio */
-}
-
-/* Style for sidebar options */
-.option-box {
-  padding: 15px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  background-color: #ffffff;
-  color: #16a5e1;
-  border: 2px solid #16a5e1;
-  transition: background-color 0.2s;
-  overflow-y: auto;
-  font-weight: bold;
-  
-}
-.option-box:hover {
-  background-color: #5fbae2; /* Highlight on hover */
-}
-
-
-.option-box.active{
-  background-color: #67bce0; 
-  font-weight: bold;border: 2px solid #117dab;
-  font-size: large;
-  color:#fff;
-  /* Customize the color as desired */
-}
-
-.option-box img {
-  width: 30px;
-  height: 30px;
-  object-fit: fill;
-}
 
 /* Content styles */
 .content {
   flex: 1; /* Take up the remaining available space */
   padding: 20px;
   
-  border: 1px solid rgb(182, 182, 182);
+  border-top: 1px solid rgb(225, 224, 224);
   overflow-y: auto;
    /* Add some space between sidebar and content */
   
@@ -153,6 +72,7 @@ body,
 padding: 20px;
 flex: 1; 
 background-color: #fff;
+border-top: 1px solid rgb(225, 224, 224);
 }
 
 .content button {
@@ -193,8 +113,10 @@ background-color: #fff;
 }
 
 .top-bar .logo-container {
-  flex: 0 0 auto;
+  flex: 1;
 }
 .top-bar-link:hover {
   color: #000;
 }
+
+
