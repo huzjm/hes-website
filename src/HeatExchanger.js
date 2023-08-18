@@ -14,7 +14,7 @@ const HeatExchanger = () => {
 
   return (
     <div className="content">
-       <img src='/image/Huzefa Engineering-01color.png' alt="Logo" className="logo" />
+
     <div className="heat-exchanger">
       <div className="introduction">
         <h2>Heat Exchanger Introduction</h2>

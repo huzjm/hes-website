@@ -14,6 +14,7 @@ import PlateFin from './PlateFin';
 import MSGratings from './MSGratings';
 import SSGratings from './SSGratings';
 import Gratings from './Gratings';
+import Footer from './Footer';
 const App = () => {
 
   return (
@@ -38,6 +39,7 @@ const App = () => {
         </Routes>
         </div>
         <FloatingButton />
+        <Footer />
     </div>
      </Router>
   );

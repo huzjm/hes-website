@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
+import './TopBar.css';
 const TopBar = () => {
   return (
     <div className="top-bar">

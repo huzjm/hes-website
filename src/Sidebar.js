@@ -55,7 +55,7 @@ const menuItems = [
   },
   {
     mainCategory: 'prefab',
-    label: 'Pre-Fabricated Structures',
+    label: 'Pre-Fabricated',
     hasSubMenus: true,
     hasImage:true,
     activeImage:'prefabactive.png',
@@ -95,7 +95,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <ul>
         {menuItems.map((item) => (
-          <li key={item.mainCategory}>
+          <li key={item.mainCategory}><div  className={`mainplussub ${activeCategory === item.mainCategory ? 'active' : ''}`}>
             <NavLink
               to={`/${item.mainCategory}`}
               activeClassName={`active main-category ${activeCategory === item.mainCategory ? 'active' : ''}`}
@@ -106,7 +106,7 @@ const Sidebar = () => {
     src={`/image/${item.activeImage}`}
     alt="Logo"
     className={`sidebar-image ${activeCategory === item.mainCategory ? 'active-image' : ''}`}
-  />} {item.label} {item.hasSubMenus && (activeCategory === item.mainCategory ? <span>&#9650;</span> : <span>&#9660;</span>)}
+  />} {item.label} 
             </NavLink>
             {item.hasSubMenus && activeCategory === item.mainCategory && (
               <ul className="sub-menu">
@@ -116,7 +116,7 @@ const Sidebar = () => {
                   </li>
                 ))}
               </ul>
-            )}
+            )}</div>
           </li>
         ))}
       </ul>
