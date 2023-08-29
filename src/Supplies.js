@@ -1,57 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
+import InfoPageTemplate from './InfoPageTemplate';
+import './App.css'
+const Supplies= () => {
+  const title = 'General Supplies';
+  const content = (
+    <div>
+      <p>
+      Welcome to our General Supplies Section
 
-const HeatExchanger = () => {
-  const [selectedType, setSelectedType] = useState('Shell and Tube');
-
-  const handleTypeChange = (type) => {
-    setSelectedType(type);
-  };
+Find a comprehensive range of general supplies to support your fabrication needs. HES offers a selection of high-quality products that complement your operations, from welding equipment to essential hardware. Explore our offerings and enhance your work environment with reliable tools and supplies. </p>
+      {/* Add more content */}
+    </div>
+  );
+  const images = ['/image/supplies1.jpg','/image/supplies2.jpg','/image/supplies3.jpg'];
+  
 
   return (
-    <div className="content">
-      <h1>Heat Exchangers</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed sapien et justo
-        consectetur accumsan at quis felis. Phasellus vel orci in massa malesuada feugiat.
-      </p>
-      <div>
-        <h3>Select Heat Exchanger Type:</h3>
-        <button
-          onClick={() => handleTypeChange('Shell and Tube')}
-          className={selectedType === 'Shell and Tube' ? 'active' : ''}
-        >
-          Shell and Tube
-        </button>
-        <button
-          onClick={() => handleTypeChange('Radiators')}
-          className={selectedType === 'Radiators' ? 'active' : ''}
-        >
-          Radiators
-        </button>
-        {/* Add more buttons for different heat exchanger types */}
-      </div>
-      {/* Render the content for the selected heat exchanger type */}
-      {selectedType === 'Shell and Tube' && (
-        <div>
-          <h2>Shell and Tube Heat Exchangers</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed sapien et justo
-            consectetur accumsan at quis felis. Phasellus vel orci in massa malesuada feugiat.
-          </p>
-        </div>
-      )}
-      {selectedType === 'Radiators' && (
-        <div>
-          <h2>Radiators</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed sapien et justo
-            consectetur accumsan at quis felis. Phasellus vel orci in massa malesuada feugiat.
-          </p>
-        </div>
-      )}
-      {/* Add more content for other heat exchanger types */}
-    </div>
+   <div className='content'> <InfoPageTemplate title={title} content={content} images={images}  mainPath='/supplies'/></div>
   );
 };
 
-export default HeatExchanger;
+export default Supplies;

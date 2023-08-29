@@ -3,22 +3,22 @@ import { NavLink,useLocation } from 'react-router-dom';
 import './sidebar.css';
 const menuItems = [
   {
-    mainCategory: 'heat-exchanger',
+    mainCategory: 'heatexchanger',
     label: 'Heat Exchangers',
     hasSubMenus: true,
     hasImage:true,
     
     activeImage:'heat-exchangeractive.png',
     subMenus: [
-      { label: 'Shell and Tube Heat Exchanger', path: '/heat-exchanger/shellandtube' },
-      { label: 'Plate Fin Heat Exchanger', path: '/heat-exchanger/platefin' },
+      { label: 'Shell and Tube Heat Exchanger', path: '/heatexchanger/shellandtube' },
+      { label: 'Plate Fin Heat Exchanger', path: '/heatexchanger/platefin' },
       // Add more submenus for Heat Exchangers
     ],
   },
   {
     mainCategory: 'gratings',
     label: 'Gratings',
-    hasSubMenus: true,
+    hasSubMenus:false,
     hasImage:true,
     
     activeImage:'gratingsactive.png',
@@ -41,15 +41,15 @@ const menuItems = [
     ],
   },
   {
-    mainCategory: 'bulkmaterial',
+    mainCategory: 'bulkmovement',
     label: 'Bulk Movement',
     hasSubMenus: true,
     hasImage:true,
     activeImage:'bulkactive.png',
     subMenus: [
-      { label: 'Conveyors', path: '/bulkmaterial/conveyors' },
-      { label: 'Hoppers', path: '/bulkmaterial/hoppers' },
-      { label: 'Bucket Elevators', path: '/bulkmaterial/bucketelevators' },
+      { label: 'Conveyors', path: '/bulkmovement/conveyors' },
+      { label: 'Hoppers', path: '/bulkmovement/hoppers' },
+      { label: 'Bucket Elevators', path: '/bulkmovement/bucketelevators' },
       // Add more submenus for Gratings
     ],
   },
@@ -61,12 +61,18 @@ const menuItems = [
     activeImage:'prefabactive.png',
     subMenus: [
       { label: 'Sheds', path: '/prefab/sheds' },
-      { label: 'Warehouses', path: '/prefab/warehouse' },
-      
+      { label: 'Railings', path: '/prefab/railings' },
+      { label: 'Monkey Ladders', path: '/prefab/ladders' },
       // Add more submenus for Gratings
     ],
   },
-  
+  {
+    mainCategory: 'portable',
+    label: 'Portable Offices',
+    hasSubMenus: false, 
+    hasImage:true,
+    activeImage:'containeractive.png',// No submenus for this category
+  },
   {
     mainCategory: 'supplies',
     label: 'General Supplies',
@@ -74,6 +80,7 @@ const menuItems = [
     hasImage:true,
     activeImage:'suppliesactive.png',// No submenus for this category
   },
+  
   
   // Add more main categories
   // ...
@@ -102,11 +109,11 @@ const Sidebar = () => {
               className="main-category"
               onClick={() => toggleSubMenu(item.mainCategory)}
             >
-            {item.hasImage && <img
+            {item.label}{item.hasImage && <img
     src={`/image/${item.activeImage}`}
     alt="Logo"
     className={`sidebar-image ${activeCategory === item.mainCategory ? 'active-image' : ''}`}
-  />} {item.label} 
+  />}  
             </NavLink>
             {item.hasSubMenus && activeCategory === item.mainCategory && (
               <ul className="sub-menu">

@@ -4,6 +4,7 @@
     justify-content: space-between;
     background-color: #fff;
     padding: 5px 20px;
+    
   }
   .top-bar-links {
     display: flex;
@@ -21,7 +22,7 @@
     color: #000;
   }
   .logo {
-    height: 100px; /* Adjust the height of the logo */
+    height: 150px; /* Adjust the height of the logo */
     width: auto;
     
     
@@ -35,7 +36,7 @@
 
     position: relative;
 
-    left: 50%;
+    left: 40%;
 
     top: 50%;
 

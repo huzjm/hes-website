@@ -9,7 +9,7 @@
     background-position: top; /* Center the image */
     background-repeat: no-repeat;   
     background-color: #fff; 
-    border: 0.5px solid rgb(231, 230, 230);
+    
     overflow-y: auto;
     
     
@@ -46,7 +46,7 @@
     max-width: 35px;
     height: auto; 
     filter:grayscale(100%);
-    transition: filter 0.4s, transform 0.4s;
+    transition: filter 0.2s, transform 0.2s;
      /* Center the image horizontally */
   }
 
@@ -69,7 +69,7 @@
   .sub-menu {
     display: flex;
     flex-direction: column;
-    transition: background-color 0.6s,font-size 0.6s,color 0.6s,max-height 0.2s ease-in-out;
+    transition: background-color 0.2s,font-size 0.2s,color 0.2s,max-height 0.2s ease-in-out;
     justify-content: flex-end;
     text-decoration: none;
     
@@ -86,10 +86,11 @@
   }
   
   .sub-menu a {
-    color: #aaaaaa;
+    color: #222222;
     text-decoration: none;
-    transition: background-color 0.6s,font-size 0.6s,color 0.6s;
+    transition: background-color 0.2s,font-size 0.2s,color 0.2s;
     font-size: 11px;
+    font-weight: bold;
     
     
   }
@@ -103,13 +104,13 @@
   .sub-menu a:hover {
     
     font-size: 12px;color:#9acde6;
-    transition: background-color 0.6s,font-size 0.6s,color 0.6s;
+    transition: background-color 0.2s,font-size 0.2s,color 0.2s;
   }
 
   .sub-menu a.active {
     
     font-size: 12px;color:#35A0F1; font-weight: bold;
-    transition: background-color 0.6s,font-size 0.6s,color 0.6s;
+    transition: background-color 0.2s,font-size 0.2s,color 0.2s;
   }
 
 
@@ -121,9 +122,9 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    color: #939393;
+    color: #1a1a1a;
     
-    transition: background-color 0.4s,font-size 0.8s,color 0.4s;
+    transition: background-color 0.2s,font-size 0.2s,color 0.2s;
     overflow-y: auto;
     text-decoration: none; /* Remove text decoration */
     justify-content: space-between; 

@@ -1,53 +1,19 @@
-import React, { useState } from 'react';
-import './HeatExchanger.css';
-import './App.css';
+import React from 'react';
+import SubMenuTemplate from './SubMenuTemplate';
+
 const PlateFin = () => {
-  const [showDetails, setShowDetails] = useState(false);
-
-  const handleShowDetails = () => {
-    setShowDetails(true);
-  };
-
-  const handleHideDetails = () => {
-    setShowDetails(false);
-  };
-
   return (
-    <div className="content">
-       <img src='/image/Huzefa Engineering-01color.png' alt="Logo" className="logo" />
-    <div className="heat-exchanger">
-      <div className="introduction">
-        <h2>Plate Fin Heat Exchangers</h2>
-        <p>
-          This is the introduction to heat exchangers. It provides a brief overview
-          of what heat exchangers are and their applications.
-        </p>
-        {!showDetails && (
-          <button onClick={handleShowDetails}>Show More Details</button>
-        )}
-      </div>
-      {showDetails && (
-        <div className="detailed-info">
-          <div className="back-button" onClick={handleHideDetails}>
-            <span>&#8592; Back</span>
-          </div>
-          <h2>Shell and Tube Heat Exchanger</h2>
-          <p>
-            The shell and tube heat exchanger is a type of heat exchanger that is widely
-            used in various industries. It consists of a shell (a large pressure vessel)
-            with a bundle of tubes inside it. One fluid runs through the tubes, and the
-            other fluid flows over the tubes to transfer heat between the two fluids.
-          </p>
-          <button onClick={handleHideDetails}>Show Less Details</button>
-        </div>
-      )}
-    </div>
-    </div>
+    <SubMenuTemplate
+    subPath='/heatexchanger/platefin'
+      mainHeading="Heat Exchanger"
+      mainPath='/heat-exchanger'
+      submenuTitle="Plate Fin Heat Exchanger"
+      image='/image/platefin.jpg'
+      content="Discover the power of compact heat transfer with our plate and fin heat exchangers. These exchangers are engineered to optimize heat exchange efficiency while minimizing space requirements. Whether you're in need of efficient air conditioning solutions or effective process cooling, our plate and fin heat exchangers are designed to excel. We take pride in offering customizable designs that adapt to your unique requirements, ensuring that you get the best out of your heat exchange processes.
+
+      Feel free to navigate through our heat exchanger section to learn more about the specific types of heat exchangers we offer, and how they can elevate your operations"
+    />
   );
 };
 
-
-
-
-  
-  export default PlateFin;
+export default PlateFin;
