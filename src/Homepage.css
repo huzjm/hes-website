@@ -2,36 +2,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, #fff);
     
+    background: linear-gradient(bottom,#888,#fff);
     border-radius: 20px;
    
   }
   
   .hero-section {
-    /* background-image: url('../public/image/output-onlinepngtools.png'); */
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
+    position: relative;
+    
+    
+    
+    width:100%;
+    overflow: hidden;
 
   }
+  .demo-bg {
   
+  position: absolute;
+  
+    display:flex;
+  height:auto; ;
+ width: 100%;
+  
+  opacity: 0.65;
+ 
+
+ /* This controls the opacity of the overlay */
+}
   
   .hero-content {
+    padding:10%;
     text-align: center;
-    ;
+    position: inherit;
   }
   
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 54px;
     margin-bottom: 10px;
   }
   
   .hero-content p {
-    font-size: 18px;
+    font-size: 36px;
     margin-bottom: 20px;
+    font-weight: bold;
   }
   
   .hero-content button {
@@ -42,7 +56,7 @@
     cursor: pointer;
     font-size: 16px;
     color: #fff;
-    transition: background-color 0.2s;
+    
   }
   
   .hero-content button:hover {
@@ -109,3 +123,6 @@
     background-color: #1289b5;
   }
   
+  @media (max-width:768px){
+
+  }

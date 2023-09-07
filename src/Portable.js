@@ -1,70 +1,125 @@
-import React from 'react';
-import InfoPageTemplate from './InfoPageTemplate';
+import React,{useState} from 'react';
+import InfoPageTemplateTemp from './InfoPageTemplateTemp';
 import './App.css'
+import {Carousel} from 'react-responsive-carousel';
+import { NavLink } from 'react-router-dom';
 const Portable = () => {
   const title = 'Portable Offices';
+  const images = ['/image/portable1.jpg','/image/portable2.jpg','/image/portable3.jpg'];
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const openModal = (index) => {
+    setSelectedImageIndex(index);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   const content = (
     <div>
-      <p>
-      Portable Offices in Containers for Rentals:
-
-Welcome to Our Portable Office Solutions
-
-At HES, we provide innovative portable office solutions housed within containers, available for rental. Our container offices offer a flexible, convenient, and cost-effective way to establish functional workspaces in various locations. These portable offices are designed to meet your immediate office space needs while maintaining the quality and standards that define our brand.
-
-Why Choose Our Portable Offices:
-
-Flexibility: Our container offices are designed to be easily transported and set up, allowing you to establish a workspace where it's needed most.
-
-Cost-Effective: Renting a container office eliminates the need for expensive and time-consuming construction projects, saving you money and resources.
-
-Quality: Just like our other products, our container offices are built with quality materials and craftsmanship to ensure a comfortable and functional workspace.
-
-Customization: We offer customization options to tailor the container office to your specific requirements, ensuring it meets your operational needs perfectly.
-
-Rapid Deployment: Whether it's a construction site, remote project location, or temporary workspace, our container offices can be quickly deployed to provide a practical and efficient solution.
-
-Applications:
-
-Our portable container offices find applications in a wide range of industries and scenarios, including:
-
-Construction Sites: Create an on-site administrative center or project management office.
-
-Events and Exhibitions: Set up ticket booths, registration centers, or information kiosks at events and exhibitions.
-
-Remote Locations: Establish functional offices in remote areas where traditional infrastructure might be lacking.
-
-Temporary Workspaces: Accommodate short-term office needs during renovations, expansions, or special projects.
-
-Features:
-
-Climate Control: Keep your workspace comfortable year-round with heating and cooling options.
-
-Security: Our container offices are secure and can be equipped with locks and other security measures.
-
-Electrical and IT Infrastructure: Wiring and outlets can be installed to support your office equipment and technology needs.
-
-Furniture and Layout: Choose from a variety of furniture and layout options to optimize your workspace.
-
-Branding: Customize the container with your branding and company colors for a professional appearance.
-
-Get in Touch:
-
-Ready to enhance your operations with our portable office solutions? Contact us today to discuss your requirements, request a quote, or learn more about how our container offices can benefit your business.
-
-Feel free to use this content as a starting point for your "Portable Offices in Containers for Rentals" page. Customize it to reflect your company's branding, values, and any additional information you'd like to highlight.</p>
-      {/* Add more content */}
+      <h1>Container Office Rental</h1>
+      <p>Flexible, Cost-Effective, and On-Demand Workspaces</p>
+      
+      <section id="about">
+        <h2>Welcome to our Container Office Rental section</h2>
+        <p>where we introduce flexible, cost-effective, and on-demand workspace solutions housed within containers.</p>
+      </section>
+      
+      <section id="why-choose">
+        <h2>Why Choose Our Container Offices?</h2>
+        <ul>
+          <li>
+            <p><strong>Flexibility:</strong> Our container offices offer a flexible and mobile solution, allowing you to establish workspaces where you need them.</p>
+          </li>
+          <li>
+            <p><strong>Cost-Effectiveness:</strong> Renting a container office eliminates the need for expensive construction projects, saving you both time and resources.</p>
+          </li>
+          <li>
+            <p><strong>Quality:</strong> Our container offices are built with quality materials and craftsmanship, ensuring a comfortable and functional workspace.</p>
+          </li>
+        </ul>
+      </section>
+      {showModal && (
+        <div className="modal" onClick={closeModal}>
+          
+          <img
+            src={images[selectedImageIndex]}
+            alt=""
+            className="enlarged-image"
+          />
+        </div>
+      )}
+       <div className="info-slideshow">
+          <Carousel showArrows={true}
+          showThumbs={true}
+          infiniteLoop={true}
+          emulateTouch={true}
+          selectedItem={selectedImageIndex}
+          showStatus={false}
+          showIndicators={false}
+          dynamicHeight={false} // Set to false to control the height
+          centerMode={false}
+          >
+            {images.map((image, index) => (
+              <div key={index} onClick={() => openModal(index)}>
+                <img src={image} alt="" className="info-image"  />
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      <section id="key-features">
+        <h2>Key Features:</h2>
+        <ul>
+          <li>
+            <p><strong>Climate Control:</strong> Keep your workspace comfortable year-round with optional heating and cooling solutions.</p>
+          </li>
+          <li>
+            <p><strong>Security:</strong> Our container offices are secure and can be equipped with locks and other security measures.</p>
+          </li>
+          <li>
+            <p><strong>Electrical and IT Infrastructure:</strong> Wiring and outlets can be installed to support your office equipment and technology needs.</p>
+          </li>
+          <li>
+            <p><strong>Furniture and Layout:</strong> Choose from a variety of furniture and layout options to optimize your workspace.</p>
+          </li>
+          <li>
+            <p><strong>Branding:</strong> Customize the container with your branding and company colors for a professional appearance.</p>
+          </li>
+        </ul>
+      </section>
+      
+      <section id="applications">
+        <h2>Applications:</h2>
+        <p>Our container offices are suitable for various industries and scenarios, including:</p>
+        <ul>
+          <li>
+            <p><strong>Construction Sites:</strong> On-site administrative centers, project management offices.</p>
+          </li>
+          <li>
+            <p><strong>Events and Exhibitions:</strong> Ticket booths, registration centers, information kiosks.</p>
+          </li>
+          <li>
+            <p><strong>Remote Locations:</strong> Functional offices in areas where traditional infrastructure may be limited.</p>
+          </li>
+          <li>
+            <p><strong>Temporary Workspaces:</strong> Short-term office solutions during renovations, expansions, or special projects.</p>
+          </li>
+        </ul>
+      </section>
+      
+      <section id="contact">
+        <h2>Get in Touch:</h2>
+        <p>Ready to set up your flexible container office rental? <a href="mailto:contact@yourcompany.com">Contact us</a> today to discuss your requirements, request a quote, or explore customization options.</p>
+      </section>
+      
+      {/* Add your footer and any additional React components here */}
     </div>
   );
-  const images = ['/image/portable1.jpg','/image/portable2.jpg','/image/portable3.jpg'];
+  
  
-  const subMenus = [
-    { label: 'Rental Offices', path: '/portable/rental' },
-    { label: 'Purchase', path: '/portable/purchase' },
-    // Add more submenu items if needed
-  ];
   return (
-   <div className='content'> <InfoPageTemplate title={title} content={content} images={images}  mainPath='/portable' /></div>
+   <div className='content'> <InfoPageTemplateTemp title={title} content={content} images={images}  mainPath='/portable' /></div>
   );
 };
 

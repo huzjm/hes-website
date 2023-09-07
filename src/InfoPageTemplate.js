@@ -22,6 +22,7 @@ const InfoPageTemplate = ({ title, content, images, subMenus= [],mainPath, subPa
   return (
     <div className="info-page-container">
       <div className="info-header">
+        <div></div>
         {isSubPathActive?(<div className="info-title">{submenuTitle}</div>):(<div className="info-title">{title}</div>)}
          {isSubPathActive ? (
      <div className="breadcrumbs">

@@ -3,18 +3,21 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+ 
+ 
 }
 .info-text {
   flex: 1;
   /* Your styles for the text content */
 }
 
-.info-header { text-transform: uppercase ;
+.info-header { 
+  text-transform: uppercase ;
   width: 100%;
   display: flex;
  align-items: flex-end;
  justify-content: space-between;
-  border-bottom: 2px solid #bfbfbf;
+  
   font-weight: bold;
   color: #16a5e1;
 }
@@ -23,6 +26,7 @@
 .info-title {
   padding-left: 20px;
   font-size: 48px;font-weight: bold;
+  color: #000;
   
 }
 
@@ -84,10 +88,10 @@
   margin-bottom: 20px;
 }
 .info-slideshow {
-  width: 40%;
-  border-radius: 5px;
+  width: 100%;
+
   padding: 20px;
-  
+ 
   
 }
 .info-solo {
@@ -98,7 +102,7 @@
   
 }
 .info-slideshow .carousel .slider-wrapper .slider .slide img {
-  height: 300px; /* Adjust the fixed height */
+   /* Adjust the fixed height */
   width: 100%;
   object-fit: contain; /* Maintain aspect ratio */
 }
@@ -156,4 +160,18 @@
   font-weight: bold;
   color: #000000;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+
+  .info-content-container  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-header { 
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

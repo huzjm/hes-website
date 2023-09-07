@@ -3,17 +3,20 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  
 }
 
 .submenu-header {
   width: 100%;
   display: flex;
- align-items: flex-end;
+ align-items: flex-start;
  justify-content: space-between;
-  border-bottom: 2px solid #bfbfbf;
+ 
 
   font-weight: bold;
-  color: #16a5e1;
+  color: #35A;
 }
 
 .submenu-title{
@@ -26,10 +29,14 @@
 }
 
 .submenu-content {
+  background-color: #a0a0a0;
   display: flex;
+  
   justify-content: space-between;
-  width: 100%;
+  width: auto;
   margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
   /* Your styling for the content area */
 }
 
@@ -42,22 +49,26 @@
   height: 300px; /* Adjust the fixed height */
   width: auto;
   object-fit: contain; 
+  border: 2px solid black;
   
 }
 .image img {
+  
   width: 100%;
   /* Styling for the image */
 }
 
 .info {
   
-    background-color: rgb(255, 255, 255);
-    color:#000000 ;
-    padding: 20px;
     
+    color:#808080 ;
+    padding-left: 20px;
+    
+    text-align: center;
+  
     border-radius: 20px;
     font-size: 20px;
-    height: fit-content;
+    
     
 }
 
@@ -68,8 +79,10 @@
 .breadcrumbs {
   padding: 10px;
   background-color: #ffffff;
-  font-size: 14px;
+  font-size: 10px;
+  font-style: italic ;
   color: #000000; text-transform: uppercase ;
+  
   /* Styling for the breadcrumb links */
 }
 
@@ -88,4 +101,18 @@
  
   justify-content: start;color:  #000000;text-decoration: none;
   font-size: 48px;
+}
+
+
+
+@media (max-width: 768px) {
+  .submenu-content  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .submenu-header{ 
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

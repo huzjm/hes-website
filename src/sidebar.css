@@ -1,7 +1,8 @@
 .sidebar {
     padding: 10px;
-    flex:1; 
-    max-width: min(20%, 300px);
+    flex-direction: column; /* Display menu items in a column */
+    align-items: flex-start; 
+    
     /* Take up the full width */
     text-align: center;
     background: linear-gradient(to bottom,#ffffff,#fff) ;
@@ -10,6 +11,7 @@
     background-repeat: no-repeat;   
     background-color: #fff; 
     
+  
     overflow-y: auto;
     
     
@@ -103,14 +105,14 @@
   
   .sub-menu a:hover {
     
-    font-size: 12px;color:#9acde6;
-    transition: background-color 0.2s,font-size 0.2s,color 0.2s;
+    color:#9acde6;
+    
   }
 
   .sub-menu a.active {
     
-    font-size: 12px;color:#35A0F1; font-weight: bold;
-    transition: background-color 0.2s,font-size 0.2s,color 0.2s;
+    color:#35A0F1; font-weight: bold;
+    
   }
 
 
@@ -163,13 +165,10 @@
     background-color: #efefef;
   
   }
-  .mainplussub{
-    box-shadow: 2px 2px 5px #cacaca;
-    border-radius: 2px;margin-bottom: 15px;
-  }
+ 
   .mainplussub.active {
     box-shadow: 2px 0px 5px #9acde6;
-    border-radius: 2px; /* Change the text color */
+    border-radius: 2px;   /* Change the text color */
      /* Add a border to the right */
     /* Add any other styling you want for the active main category */
   }

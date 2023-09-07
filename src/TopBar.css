@@ -1,28 +1,29 @@
 .top-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #fff;
-    padding: 5px 20px;
-    
+    border-bottom: 1px solid #f2f2f2;
+    padding:20px;
+   
   }
   .top-bar-links {
     display: flex;
     align-items: center;
   }
   .top-bar-link {
-    margin-left: 20px;
+    
     text-decoration: none;
-    color: #16a5e1;
+    color: #000;
     font-weight: bold;
   }
   
  
   .top-bar-link:hover {
-    color: #000;
+    color: #16a5e1;
   }
   .logo {
-    height: 100px; /* Adjust the height of the logo */
+    height: 150px; /* Adjust the height of the logo */
     width: auto;
     
     
@@ -34,14 +35,24 @@
     justify-content: center;
     float: left;
 
-    position: relative;
+   
 
-    left: 40%;
-
-    top: 50%;
-
-    margin-left: -100px; /* Half the width of your image. IE6 will double this measure because it is floated. */
+     /* Half the width of your image. IE6 will double this measure because it is floated. */
 
    
     
+  }
+
+  @media (max-width: 768px) {
+    .top-bar  {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo-container {
+      flex-direction: column;
+      align-items: center;
+      
+      
+    }
+  
   }

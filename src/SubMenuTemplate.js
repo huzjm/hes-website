@@ -9,14 +9,13 @@ const SubMenuTemplate = ({ mainHeading,mainPath,subPath, submenuTitle, image, co
 
   return (
     
-    <div className="content">
+    
       
     <div className="submenu-template">
       
     <div className="submenu-header">
-    <div className="submenu-title"><NavLink to={mainPath} className="back-button">
-    &larr; 
-  </NavLink>{submenuTitle}</div>
+      <div></div>
+    <div className="submenu-title">{submenuTitle}</div>
   <div className="breadcrumbs">
     <NavLink to="/">Home</NavLink> / <NavLink to={mainPath}>{mainHeading}</NavLink> / <NavLink to={subPath}>{submenuTitle}</NavLink>
   </div>
@@ -24,13 +23,13 @@ const SubMenuTemplate = ({ mainHeading,mainPath,subPath, submenuTitle, image, co
 
       <div className="submenu-content">
         
-          <img src={image} className='submenu-image' />
+          
         
         <div className="info">
           <p>{content}</p>
-        </div>
+        </div><img src={image} className='submenu-image' />
       </div>
-    </div></div>
+    </div>
   );
 };
 

@@ -2,7 +2,7 @@
 import './App.css';
 import { NavLink,BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useState } from 'react';
-import Sidebar from './Sidebar';
+
 import Homepage from './Homepage';
 import TopBar from './TopBar';
 import HeatExchanger from './HeatExchanger';
@@ -26,19 +26,28 @@ import BucketElevators from './BucketElevators';
 import Sheds from './Sheds';
 import Railings from './Railings';
 import Ladders from './Ladders';
+
+import Navbar from './NavBar';
+
+import ShopInShop from './ShopInShop';
+import ContactUs from './ContactUs';
 const App = () => {
 
   return (
     <Router>
     <div className="app">
       <TopBar/>
+      <Navbar/>
+
+      
     <div className="logo-sidebar-container">
       
-      <Sidebar  />
+      
       
       <Routes>
           <Route path="/" element={<Homepage />} />
-         
+          <Route path="/ContactUs" element={<ContactUs/>}/>
+         <Route path="/ShopInShop" element = {<ShopInShop/>}/>
            <Route path="/heatexchanger" element={<HeatExchanger />} />
            <Route path="/heatexchanger/shellandtube" element={<ShellandTube />} />
            <Route path="/heatexchanger/platefin" element={<PlateFin />} />

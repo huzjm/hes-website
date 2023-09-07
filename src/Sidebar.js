@@ -10,8 +10,8 @@ const menuItems = [
     
     activeImage:'heat-exchangeractive.png',
     subMenus: [
-      { label: 'Shell and Tube Heat Exchanger', path: '/heatexchanger/shellandtube' },
-      { label: 'Plate Fin Heat Exchanger', path: '/heatexchanger/platefin' },
+      { label: 'Shell and Tube', path: '/heatexchanger/shellandtube' },
+      { label: 'Plate Fin', path: '/heatexchanger/platefin' },
       // Add more submenus for Heat Exchangers
     ],
   },
@@ -89,41 +89,39 @@ const Sidebar = () => {
   const location =useLocation();
   const [activeCategory, setActiveCategory] = useState('');
 
-  // Function to toggle submenu visibility
+  
   const toggleSubMenu = (category) => {
     setActiveCategory(category === activeCategory ? '' : category);
   };
   React.useEffect(() => {
     const pathParts = location.pathname.split('/');
-    const category = pathParts[1]; // Assuming the path structure is "/products/category/subcategory"
+    const category = pathParts[1]; 
     setActiveCategory(category);
   }, [location.pathname]);
   return (
     <div className="sidebar">
       <ul>
         {menuItems.map((item) => (
-          <li key={item.mainCategory}><div  className={`mainplussub ${activeCategory === item.mainCategory ? 'active' : ''}`}>
-            <NavLink
-              to={`/${item.mainCategory}`}
-              activeClassName={`active main-category ${activeCategory === item.mainCategory ? 'active' : ''}`}
-              className="main-category"
-              onClick={() => toggleSubMenu(item.mainCategory)}
-            >
-            {item.label}{item.hasImage && <img
-    src={`/image/${item.activeImage}`}
-    alt="Logo"
-    className={`sidebar-image ${activeCategory === item.mainCategory ? 'active-image' : ''}`}
-  />}  
-            </NavLink>
-            {item.hasSubMenus && activeCategory === item.mainCategory && (
-              <ul className="sub-menu">
-                {item.subMenus.map((subMenu) => (
-                  <li key={subMenu.label}>
-                    <NavLink to={subMenu.path} activeClassName="active">{subMenu.label}</NavLink>
-                  </li>
-                ))}
-              </ul>
-            )}</div>
+          <li key={item.mainCategory}>
+            <div className={`mainplussub ${activeCategory === item.mainCategory ? 'active' : ''}`}>
+              <NavLink
+                to={`/${item.mainCategory}`}
+                activeClassName={`active main-category ${activeCategory === item.mainCategory ? 'active' : ''}`}
+                className="main-category"
+                onClick={() => toggleSubMenu(item.mainCategory)}
+              >
+                {item.label}
+              </NavLink>
+              {item.hasSubMenus && activeCategory === item.mainCategory && (
+                <ul className="sub-menu">
+                  {item.subMenus.map((subMenu) => (
+                    <li key={subMenu.label}>
+                      <NavLink to={subMenu.path} activeClassName="active">{subMenu.label}</NavLink>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </li>
         ))}
       </ul>

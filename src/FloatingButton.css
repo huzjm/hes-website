@@ -31,4 +31,13 @@
     transform: scale(1.1);
   }
 
- 
+
+  @media (max-width: 768px){
+    .floating-button {height:1px;
+      width: 0px;
+      height: 0px;
+    
+  }
+    
+  
+}

@@ -6,17 +6,18 @@ const TopBar = () => {
     <div className="top-bar">
       <div className="logo-container">
         <NavLink to="/">
+        
           <img src='/image/Huzefa Engineering-011.png' alt="Logo" className="logo" />
         </NavLink>
       </div>
-      <div className="top-bar-links">
+      {/* <div className="top-bar-links">
         <NavLink to="/contact" className="top-bar-link">
           Contact Us
         </NavLink>
         <NavLink to="/about" className="top-bar-link">
           About Us
         </NavLink>
-      </div>
+      </div> */}
     </div>
   );
 };
