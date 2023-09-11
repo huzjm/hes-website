@@ -1,9 +1,12 @@
 import React,{useState} from 'react';
-import InfoPageTemplateTemp from './InfoPageTemplateTemp';
-import './App.css'
+import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
+import '../App.css'
 import {Carousel} from 'react-responsive-carousel';
 import { NavLink } from 'react-router-dom';
 const HeatExchanger= () => {
+
+  
+    document.title = 'HES| Heat Exchangers';
   const [showModal, setShowModal] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const images = ['/image/shellandtube.jpeg','/image/heatexchanger1.jpg','/image/heatexchanger2.jpg'];
@@ -60,11 +63,11 @@ const HeatExchanger= () => {
           </Carousel>
         </div>
        <h1>Types of Heat Exchangers:</h1>
-       <ul><li> <NavLink to= '/heatexchanger/shellandtube'><h2>Shell and Tube Heat Exchangers</h2>
-       </NavLink>
+       <ul><li> <h2>Shell and Tube Heat Exchangers</h2>
+       
        Efficiency in Every Tube: Our shell and tube heat exchangers are engineered for optimal heat exchange between two fluids. They are known for their durability and reliability in various industries, including petrochemical and power generation.</li>
-       <li> <NavLink to= '/heatexchanger/platefin'><h2>Plate Fin Heat Exchangers</h2>
-       </NavLink>
+       <li> <h2>Plate Fin Heat Exchangers</h2>
+       
        Compact and Effective: If space is limited, our plate and fin heat exchangers offer a solution. These versatile exchangers excel in applications like air conditioning and refrigeration.</li></ul>
 
        <h1>Applications:</h1>

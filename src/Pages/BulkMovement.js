@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
-import InfoPageTemplateTemp from './InfoPageTemplateTemp';
-import './App.css'
+import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
+import '../App.css'
 import {Carousel} from 'react-responsive-carousel';
-import { NavLink } from 'react-router-dom';
+
 const BulkMovement = () => {
   const images = ['/image/bulk1.jpg','/image/bulk4.jpg','/image/bulk5.jpg','/image/bulk7.jpg'];
   const title = 'Bulk Movement';const [showModal, setShowModal] = useState(false);

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Homepage.css';
-import './App.css'
+import '../App.css'
 const Homepage = () => {
+  document.title = 'Huzefa Engineering Services';
   return (<div className="content">
     <div className="homepage">
       <div className="hero-section">
@@ -12,7 +13,7 @@ const Homepage = () => {
   />
         <div className="hero-content">
           <h1>Welcome to Huzefa Engineering Services</h1>
-          <p>Crafting Excellence for 25 Years</p>
+          <p>Fabricating Excellence for 25 Years</p>
          
         </div>
       </div>
@@ -41,7 +42,7 @@ const Homepage = () => {
             <p><strong>Pre-fabricated Structures:</strong> Find versatile solutions with our sheds, railings, and monkey ladders.</p>
           </li>
           <li>
-            <p><strong>General Supplies:</strong> Explore our diverse range of industrial supplies, including welding equipment and hardware.</p>
+            <p><strong>ShopInShop:</strong> Explore our diverse range of industrial supplies, including welding equipment and hardware.</p>
           </li>
         </ul>
       </section>

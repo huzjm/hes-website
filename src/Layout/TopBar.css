@@ -1,11 +1,12 @@
 .top-bar {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     background-color: #fff;
-    border-bottom: 1px solid #f2f2f2;
-    padding:20px;
    
+    
+    margin-left: 18%;;
+    margin-right: 18%;;
   }
   .top-bar-links {
     display: flex;
@@ -28,7 +29,11 @@
     
     
   }
-  
+  .socialbar{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
   /* Update the logo and sidebar styles */
   .logo-container {
     display: flex;
@@ -41,6 +46,11 @@
 
    
     
+  }
+
+  .social{
+width: 50px;
+height: auto;
   }
 
   @media (max-width: 768px) {

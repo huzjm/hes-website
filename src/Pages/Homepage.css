@@ -3,14 +3,14 @@
     flex-direction: column;
     align-items: center;
     
-    background: linear-gradient(bottom,#888,#fff);
+    
     border-radius: 20px;
-   
+ 
   }
   
   .hero-section {
     position: relative;
-    
+   
     
     
     width:100%;
@@ -22,10 +22,10 @@
   position: absolute;
   
     display:flex;
-  height:auto; ;
+  
  width: 100%;
   
-  opacity: 0.65;
+  opacity: 0.55;
  
 
  /* This controls the opacity of the overlay */
@@ -35,6 +35,7 @@
     padding:10%;
     text-align: center;
     position: inherit;
+    
   }
   
   .hero-content h1 {
@@ -124,5 +125,6 @@
   }
   
   @media (max-width:768px){
-
+    .hero-content h1 {font-size: 30px;}
+      .hero-content p {font-size: 20px;}
   }

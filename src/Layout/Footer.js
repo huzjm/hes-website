@@ -5,13 +5,13 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="footer"><div className="footer-column">
-    {/* Third column content */}
-    <h3>Contact Information</h3>
+    
+   <div> <h3>Contact Information</h3>
     <p>Email: info@huzefaengineering.com</p>
     <p>Phones: +92 32550551-52</p>
     <p>Office: B9-B1, SP Chambers, Suite# 14</p>
     <p> S.I.T.E., Karachi.</p>
-    <p>Factory: E-146-147, H.I.T.E., Hub, Balochistan</p>
+    <p>Factory: E-146-147, H.I.T.E., Hub, Balochistan</p></div><div>
     <a href="https://www.linkedin.com/company/96448348" target="_blank" rel="noopener noreferrer" >
  <img src='/image/iconlinkedin.png' alt="Logo" className="footerlogo" />
 </a>
@@ -21,10 +21,10 @@ const Footer = () => {
 <a href='https://wa.me/14034012929' target="_blank" rel="noopener noreferrer" >
  <img src='/image/iconwhatsapp.png' alt="Logo" className="footerlogo" />
 </a>
-  </div>
+</div> </div>
       
       <div className="footer-column">
-        {/* Second column content */}
+      <div>
         <h3>Quick Links</h3>
         <ul>
           <li>
@@ -52,14 +52,14 @@ const Footer = () => {
             <a href="/contactus">Contact Us</a>
           </li>
           {/* Add more links */}
-        </ul>
+        </ul></div>
       </div>
       <div className="footer-column">
-        {/* First column content */}
+        
         <h3>Our Office</h3>
         <NavLink to="https://goo.gl/maps/xLp6TrvujDnMJEj17" target="_blank">
         <div className='map-image-container'><img
-          src='/image/hesofficemap1.jpg' className="map-image"       /></div>
+          src='/image/hesofficemap1.jpg' className="map-image" alt=""      /></div>
           </NavLink>
         <p>B9-B1, SP Chambers, Suite# 14,</p>
         <p> S.I.T.E., Karachi.</p>

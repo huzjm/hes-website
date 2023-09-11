@@ -1,9 +1,9 @@
 
 import React,{useState} from 'react';
-import InfoPageTemplateTemp from './InfoPageTemplateTemp';
-import './App.css'
+import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
+import '../App.css'
 import {Carousel} from 'react-responsive-carousel';
-import { NavLink } from 'react-router-dom';
+
 const Supplies= () => {
   const title = 'General Supplies';
   const images = ['/image/supplies1.jpg','/image/supplies2.jpg','/image/supplies3.jpg'];

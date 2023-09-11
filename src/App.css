@@ -40,9 +40,7 @@ body,
   
     
 }
-.content li {
-  
-}
+
 .content a {
   text-decoration: underline;
   color: rgb(67, 67, 173);
@@ -104,7 +102,19 @@ border-top: 1px solid rgb(225, 224, 224);
   background-color: #bbd5ef;
   font-weight: bold;
 }
-/* ... Additional styles ... */
+
+
+.social-bar{
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  
+ padding-right: 20%;
+  background-color: rgb(255, 255, 255);
+ 
+}
+
+
 
 
 

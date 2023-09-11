@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
-import InfoPageTemplateTemp from './InfoPageTemplateTemp';
-import './App.css'
+import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
+
 import {Carousel} from 'react-responsive-carousel';
 import { NavLink } from 'react-router-dom';
 const Gratings = () => {

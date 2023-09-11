@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
-import InfoPageTemplateTemp from './InfoPageTemplateTemp';
-import './App.css'
+import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
+
 import {Carousel} from 'react-responsive-carousel';
-import { NavLink } from 'react-router-dom';
+
 const StorageTanks = () => {
   const title = 'Storage Tanks';
   const images = ['/image/storage1.jpg','/image/storage2.jpg','/image/storage3.jpg'];
@@ -122,7 +122,7 @@ const StorageTanks = () => {
   ];
 
   return (
-   <div className='content'> <InfoPageTemplateTemp title={title} content={content} images={images} subMenus={subMenus} mainPath='/storage'/></div>
+   <div className='content'> <InfoPageTemplateTemp title={title} content={content} images={images}  mainPath='/storage'/></div>
   );
 };
 
