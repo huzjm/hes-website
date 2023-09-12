@@ -75,12 +75,12 @@ const menuItems = [
     
 hasSubMenus:false,
   },
-  {
-    mainCategory: '/supplies',
-    label: 'General Supplies',
-    hasSubMenus: false, 
+  // {
+  //   mainCategory: '/supplies',
+  //   label: 'General Supplies',
+  //   hasSubMenus: false, 
     
-  },
+  // },
   
   
   // Add more main categories

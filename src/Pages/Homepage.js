@@ -1,6 +1,7 @@
 import React from 'react';
 import './Homepage.css';
 import '../App.css'
+
 const Homepage = () => {
   document.title = 'Huzefa Engineering Services';
   return (<div className="content">
@@ -24,6 +25,7 @@ const Homepage = () => {
       </section>
 
       <section id="our-expertise">
+        
         <h2>Our Expertise:</h2>
         <ul>
           <li>
@@ -46,6 +48,7 @@ const Homepage = () => {
           </li>
         </ul>
       </section>
+      
 
       <section id="current-projects">
         <h2>Current Projects:</h2>

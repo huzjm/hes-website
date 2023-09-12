@@ -18,14 +18,14 @@ const TopBar = () => {
         
         <img src='/image/twitterico.png' alt="" className="social" />
       </NavLink>
-      <NavLink to="/">
+      </div><div><NavLink to="/">
             
-        <img src='/image/facebookico.png' alt="" className="social" />
-      </NavLink>
-      <NavLink to="/">
-            
-        <img src='/image/linkedico.png' alt="" className="social" />
-      </NavLink></div></div>
+            <img src='/image/facebookico.png' alt="" className="social" />
+          </NavLink>
+          <NavLink to="/">
+                
+            <img src='/image/linkedico.png' alt="" className="social" />
+          </NavLink></div></div>
      
     </div>
   );

@@ -13,13 +13,16 @@ const Footer = () => {
     <p> S.I.T.E., Karachi.</p>
     <p>Factory: E-146-147, H.I.T.E., Hub, Balochistan</p></div><div>
     <a href="https://www.linkedin.com/company/96448348" target="_blank" rel="noopener noreferrer" >
- <img src='/image/iconlinkedin.png' alt="Logo" className="footerlogo" />
+ <img src='/image/linkedico.png' alt="Logo" className="footerlogo" />
 </a>
 <a href="https://www.facebook.com/p/HUZEFA-ENGINEERING-SERVICES-100063598717121/?paipv=0&eav=AfZHrqphuDzk7ev3vdCGDo-YR4xl7yzGByW0AUz57Z5vuMAf70PbvBS6slUfZKkNLEA&_rdr" target="_blank" rel="noopener noreferrer" >
- <img src='/image/iconfacebook.png' alt="Logo" className="footerlogo" />
+ <img src='/image/facebookico.png' alt="Logo" className="footerlogo" />
 </a>
 <a href='https://wa.me/14034012929' target="_blank" rel="noopener noreferrer" >
- <img src='/image/iconwhatsapp.png' alt="Logo" className="footerlogo" />
+ <img src='/image/whatsappico.png' alt="Logo" className="footerlogo" />
+</a>
+<a href="https://www.linkedin.com/company/96448348" target="_blank" rel="noopener noreferrer" >
+ <img src='/image/twitterico.png' alt="Logo" className="footerlogo" />
 </a>
 </div> </div>
       

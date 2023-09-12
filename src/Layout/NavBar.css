@@ -1,16 +1,15 @@
 .menu {
     list-style: none;
-    padding: 20px;
+    
     display: flex;
     background-color: #505050;
-    color: #35A0F1;
+    color: #0065E7;
     margin-top: 0px;
     justify-content: space-between;
-    padding-left:  18%;;
-    padding-right:  18%;;
+    padding:20px 15%;
     margin-bottom: 0px;
     font-weight: bold;
-    
+   
     box-shadow: 5px 10px 30px #888888;
   }
   
@@ -18,7 +17,9 @@
     color:#dcdcdc
     
   }
-
+.menu li{
+  margin: 0px 5px;
+}
 
   
   .menu a {
