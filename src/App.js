@@ -1,13 +1,13 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 
 import Homepage from './Pages/Homepage';
 import TopBar from './Layout/TopBar';
 import HeatExchanger from './Pages/HeatExchanger';
 
-import Supplies from './Pages/Supplies';
+
 import FloatingButton from './Layout/FloatingButton';
 
 import Gratings from './Pages/Gratings';
@@ -46,7 +46,7 @@ const App = () => {
          <Route path="/ShopInShop" element = {<ShopInShop/>}/>
            <Route path="/heatexchanger" element={<HeatExchanger />} />
            
-           <Route path="/supplies" element={<Supplies />} />
+           
          
            <Route path="/gratings" element={<Gratings />} />
         

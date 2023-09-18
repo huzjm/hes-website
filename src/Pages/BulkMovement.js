@@ -4,6 +4,7 @@ import '../App.css'
 import {Carousel} from 'react-responsive-carousel';
 
 const BulkMovement = () => {
+  document.title="HES | Bulk Movement"
   const images = ['/image/bulk1.jpg','/image/bulk4.jpg','/image/bulk5.jpg','/image/bulk7.jpg'];
   const title = 'Bulk Movement';const [showModal, setShowModal] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -108,7 +109,7 @@ const BulkMovement = () => {
       
       <section id="contact">
         <h2>Get in Touch:</h2>
-        <p>Ready to streamline your material transport with our Bulk Movement Solutions? <a href="mailto:contact@yourcompany.com">Contact us</a> today to discuss your requirements, request a quote, or explore customization options.</p>
+        <p>Ready to streamline your material transport with our Bulk Movement Solutions? <a href="/contactus">Contact us</a> today to discuss your requirements, request a quote, or explore customization options.</p>
       </section>
       
       {/* Add your footer and any additional React components here */}

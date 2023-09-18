@@ -3,13 +3,13 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    margin: 50px 100px;
+    margin: 2% 4%;
     padding: 20px;
     background-color: #595a5a;
-    border: 5px solid #888888;
+   
     color: #35a0f1;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px #686868;
+    box-shadow: 0px 0px 10px 5px #000000;
   }
   
   .footer-column {
@@ -61,6 +61,7 @@
       width: 100%;
       margin-bottom: 20px;
       text-align: center;
+      align-items: center;
     }
   }
 
@@ -78,12 +79,12 @@
 
   
    padding: 5px;
-   filter: brightness(100%);
+   filter: brightness(150%);
 width: 40px;
 height: auto;
   }
 
   .footerlogo:hover{
-    filter:brightness(150%);
+    filter:brightness(120%);
  
    }

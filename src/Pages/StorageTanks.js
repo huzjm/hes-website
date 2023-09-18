@@ -4,6 +4,7 @@ import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
 import {Carousel} from 'react-responsive-carousel';
 
 const StorageTanks = () => {
+  document.title = 'HES | Storage Tanks';
   const title = 'Storage Tanks';
   const images = ['/image/storage1.jpg','/image/storage2.jpg','/image/storage3.jpg'];
   const [showModal, setShowModal] = useState(false);
@@ -108,7 +109,7 @@ const StorageTanks = () => {
     
     <section id="contact">
       <h2>Get in Touch:</h2>
-      <p>Ready to safeguard your materials with our Storage Tanks? <a href="mailto:contact@yourcompany.com">Contact us</a> today to discuss your requirements, request a quote, or explore customization options.</p>
+      <p>Ready to safeguard your materials with our Storage Tanks? <a href="/contactus">Contact us</a> today to discuss your requirements, request a quote, or explore customization options.</p>
     </section>
     
     {/* Add your footer and any additional React components here */}

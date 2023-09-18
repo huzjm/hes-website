@@ -88,8 +88,9 @@
   margin-bottom: 20px;
 }
 .info-slideshow {
-  width: 100%;
-
+  width: 40%;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
   padding: 20px;
  
   
@@ -123,7 +124,7 @@
 
 
 .info-image {
-  max-width: 50px;
+  max-width: 500px;
   
   max-height:300px; /* Adjust as needed */
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './ContactUs.css';
 
 const ContactUs = () => {
+  document.title = 'HES | Contact US';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,18 +16,26 @@ const ContactUs = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission, you can send the data to a server or perform other actions here
-    console.log(formData);
-  };
 
+    const { name, email, phone, subject, message } = formData;
+
+    // Send an email using SendGrid
+    const msg = {
+      to: 'recipient@example.com', // Replace with the recipient's email address
+      from: email,
+      subject: subject,
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+    };
+
+  };
   return (
     <div className="contact-container">
       <div className="contact-form">
         <h1>Contact Us</h1>
-        <p>Email: info@huzefaengineering.com</p>
-        <p>Phone: +1 (403) 401-2929</p>
+        <p>Email: <a href="mailto:info@huzefaengineering.com">info@huzefaengineering.com</a></p>
+        <p>Phone: <a href="https://wa.me/923001886226">+92 3001886226</a></p>
         
         <form onSubmit={handleSubmit}>
           <div className="form-group">

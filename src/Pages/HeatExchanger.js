@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 const HeatExchanger= () => {
 
   
-    document.title = 'HES| Heat Exchangers';
+    document.title = 'HES | Heat Exchangers';
   const [showModal, setShowModal] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const images = ['/image/shellandtube.jpeg','/image/heatexchanger1.jpg','/image/heatexchanger2.jpg'];

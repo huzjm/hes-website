@@ -4,6 +4,7 @@ import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
 import {Carousel} from 'react-responsive-carousel';
 import { NavLink } from 'react-router-dom';
 const Gratings = () => {
+  document.title = 'HES | Gratings';
   const title = 'Gratings';
   const images = ['/image/gratings1.jpg','/image/gratings2.jpg','/image/gratings3.jpg','/image/gratings4.jpg'];
   const [showModal, setShowModal] = useState(false);

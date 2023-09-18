@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer"><div className="footer-column">
     
    <div> <h3>Contact Information</h3>
-    <p>Email: info@huzefaengineering.com</p>
+    <p>Email: <a href="mailto:info@huzefaengineering.com">info@huzefaengineering.com</a></p>
     <p>Phones: +92 32550551-52</p>
     <p>Office: B9-B1, SP Chambers, Suite# 14</p>
     <p> S.I.T.E., Karachi.</p>
@@ -49,7 +49,7 @@ const Footer = () => {
             <a href="/portable">Portable Offices</a>
           </li>
           <li>
-            <a href="/supplies">General Supplies</a>
+            <a href="/shopinshop">ShopInShop</a>
           </li>
           <li>
             <a href="/contactus">Contact Us</a>
@@ -60,10 +60,16 @@ const Footer = () => {
       <div className="footer-column">
         
         <h3>Our Office</h3>
-        <NavLink to="https://goo.gl/maps/xLp6TrvujDnMJEj17" target="_blank">
-        <div className='map-image-container'><img
-          src='/image/hesofficemap1.jpg' className="map-image" alt=""      /></div>
-          </NavLink>
+        <iframe
+      title="My Google Map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226.1647155875858!2d67.01018679693989!3d24.910413593319888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f6ca62e9251%3A0x66cad6e9f1d31d27!2sHuzefa%20Engineering%20Services!5e0!3m2!1sen!2s!4v1694597734385!5m2!1sen!2s"
+      width="400"
+      height="300"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
         <p>B9-B1, SP Chambers, Suite# 14,</p>
         <p> S.I.T.E., Karachi.</p>
       </div>

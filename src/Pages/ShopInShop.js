@@ -4,6 +4,7 @@ import '../App.css'
 import {Carousel} from 'react-responsive-carousel';
 
 const ShopInShop= () => {
+  document.title = 'HES | ShopInShop';
   const [showModal, setShowModal] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const images = ['/image/supplies1.jpg','/image/supplies3.jpg','/image/supplies2.jpg'];
@@ -94,7 +95,7 @@ const ShopInShop= () => {
 
 <h2>Get in Touch:</h2>
 
-<p>Ready to bring the convenience of ShopInShop to your workplace? <a href="mailto:huzefa@yhuzefaengineering.com">Contact us</a> today to discuss how our program can benefit your company, customize your inventory, or request a consultation.</p>
+<p>Ready to bring the convenience of ShopInShop to your workplace? <a href="/contactus">Contact us</a> today to discuss how our program can benefit your company, customize your inventory, or request a consultation.</p>
 
       
 

@@ -3,7 +3,7 @@ import './FloatingButton.css'; // Create a corresponding CSS file
 
 const FloatingButton = () => {
   // Replace the link below with your desired contact link or WhatsApp link
-  const contactLink = 'https://wa.me/14034012929';
+  const contactLink = 'https://wa.me/923001886226';
 
   return (
     <a href={contactLink} target="_blank" rel="noopener noreferrer" className="floating-button">

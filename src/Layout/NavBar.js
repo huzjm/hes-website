@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { NavLink } from 'react-router-dom'; // Assuming you're using React Router
 import './NavBar.css'
 const menuItems = [
@@ -18,7 +18,7 @@ const menuItems = [
   {
     mainCategory: '/gratings',
     label: 'Gratings',
-    hasSubMenus:false,
+    hasSubMenus:true,
    
     
     subMenus: [
@@ -88,9 +88,10 @@ hasSubMenus:false,
 ];
 
 function NavBar() {
+  
   return (
     <nav>
-      <ul className="menu">
+      <ul className={`menu`}>
       {menuItems.map((item, index) => (
         <li key={index} className={item.hasSubMenus ? 'submenu' : ''}>
           {item.hasSubMenus ? (

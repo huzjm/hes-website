@@ -1,6 +1,6 @@
 .menu {
     list-style: none;
-    
+     
     display: flex;
     background-color: #505050;
     color: #0065E7;
@@ -9,12 +9,15 @@
     padding:20px 15%;
     margin-bottom: 0px;
     font-weight: bold;
-   
+ 
+   transition: top 0.4s;
     box-shadow: 5px 10px 30px #888888;
   }
+
+ 
   
   .menu a:hover {
-    color:#dcdcdc
+    color:#ffffff;
     
   }
 .menu li{
@@ -24,7 +27,7 @@
   
   .menu a {
     text-decoration: none;
-      color: #ffffff;
+      color: #dcdcdc
   }
   .menu .active,
   .menu .active:hover {
@@ -75,19 +78,20 @@
       flex-direction: column;
       align-items: center;
       padding: 0px;
-      margin:0px;
+      
      height:auto;
     border:none;
      box-shadow:none;
-     background-color: #fff;
+    
     }
     
     .menu li {
     padding:10px;
-    width: 70%;
+    width: 100%;
     text-align: center;
-    border:1px solid rgb(255, 255, 255);
-    background-color: #3a3a3a;
+    border:1px solid #000000;
+    background-color: #505050;
+    color:#000000;
     }
   
   }
