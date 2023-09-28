@@ -1,7 +1,7 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 
 import Homepage from './Pages/Homepage';
 import TopBar from './Layout/TopBar';

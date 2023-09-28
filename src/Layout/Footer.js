@@ -1,17 +1,17 @@
 import React from 'react';
 import './Footer.css';
-import { NavLink } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
     <footer className="footer"><div className="footer-column">
     
    <div> <h3>Contact Information</h3>
-    <p>Email: <a href="mailto:info@huzefaengineering.com">info@huzefaengineering.com</a></p>
-    <p>Phones: +92 32550551-52</p>
-    <p>Office: B9-B1, SP Chambers, Suite# 14</p>
+    <p><strong>Email:</strong> <a href="mailto:info@huzefaengineering.com">info@huzefaengineering.com</a></p>
+    <p><strong>Phones:</strong> +92 32550551-52</p>
+    <p><strong>Office:</strong> B9-B1, SP Chambers, Suite# 14</p>
     <p> S.I.T.E., Karachi.</p>
-    <p>Factory: E-146-147, H.I.T.E., Hub, Balochistan</p></div><div>
+    <p><strong>Factory:</strong> E-146-147, H.I.T.E., Hub, Balochistan</p></div><div>
     <a href="https://www.linkedin.com/company/96448348" target="_blank" rel="noopener noreferrer" >
  <img src='/image/linkedico.png' alt="Logo" className="footerlogo" />
 </a>

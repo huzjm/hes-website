@@ -9,7 +9,7 @@ const HeatExchanger= () => {
     document.title = 'HES | Heat Exchangers';
   const [showModal, setShowModal] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-  const images = ['/image/shellandtube.jpeg','/image/heatexchanger1.jpg','/image/heatexchanger2.jpg'];
+  const images = ['/image/heatexchanger1.jpeg','/image/heatexchanger3.jpg','/image/heatexchanger2.jpg'];
   
 
   const openModal = (index) => {

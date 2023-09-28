@@ -1,4 +1,4 @@
-import React , { useEffect, useState } from 'react';
+import React  from 'react';
 import { NavLink } from 'react-router-dom';
 import './TopBar.css';
 const TopBar = () => {
@@ -12,22 +12,7 @@ const TopBar = () => {
           <img src='/image/logo.jpg' alt="Logo" className={`logo`} />
         </NavLink>
       </div>
-      {/* <div className="socialbar"><div><NavLink to="/">
-        
-        <img src='/image/whatsappico.png' alt="" className="social" />
-      </NavLink>
-      <NavLink to="/">
-        
-        <img src='/image/twitterico.png' alt="" className="social" />
-      </NavLink>
-      </div><div><NavLink to="/">
-            
-            <img src='/image/facebookico.png' alt="" className="social" />
-          </NavLink>
-          <NavLink to="/">
-                
-            <img src='/image/linkedico.png' alt="" className="social" />
-          </NavLink></div></div> */}
+      
      
     </div>
     

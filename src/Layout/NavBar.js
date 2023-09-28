@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom'; // Assuming you're using React Router
 import './NavBar.css'
 const menuItems = [
@@ -75,16 +75,7 @@ const menuItems = [
     
 hasSubMenus:false,
   },
-  // {
-  //   mainCategory: '/supplies',
-  //   label: 'General Supplies',
-  //   hasSubMenus: false, 
-    
-  // },
   
-  
-  // Add more main categories
-  // ...
 ];
 
 function NavBar() {
@@ -99,15 +90,7 @@ function NavBar() {
           ) : (
             <NavLink to={item.mainCategory}>{item.label}</NavLink>
           )}
-          {/* {item.hasSubMenus && (
-            <ul className="sub-menu">
-              {item.subMenus.map((subItem, subIndex) => (
-                <li key={subIndex}>
-                  <NavLink to={subItem.path}>{subItem.label}</NavLink>
-                </li>
-              ))}
-            </ul>
-          )} */}
+          
         </li>
       ))}
       </ul>

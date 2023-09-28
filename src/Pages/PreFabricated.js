@@ -2,10 +2,10 @@ import React,{useState} from 'react';
 import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
 import '../App.css'
 import {Carousel} from 'react-responsive-carousel';
-import { NavLink } from 'react-router-dom';
+
 const PreFabricated = () => {
   document.title = 'HES | Pre-Fabricated Structures';
-  const title = 'Pre-Fabricated';const images = ['/image/prefab1.jpg','/image/prefab2.jpg'];
+  const title = 'Pre-Fabricated';const images = ['/image/prefab1.jpg','/image/prefab2.jpg','/image/prefab3.jpg'];
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const openModal = (index) => {
@@ -51,10 +51,10 @@ const PreFabricated = () => {
           <Carousel showArrows={true}
           showThumbs={true}
           infiniteLoop={true}
-          emulateTouch={true}
+          
           selectedItem={selectedImageIndex}
           showStatus={false}
-          showIndicators={false}
+          
           dynamicHeight={false} // Set to false to control the height
           centerMode={false}
           >
@@ -108,7 +108,7 @@ const PreFabricated = () => {
       <p>Ready to deploy our efficient and versatile Pre-fabricated Structures? <a href="/contactus">Contact us</a> today to discuss your requirements, request a quote, or explore customization options.</p>
     </section>
     
-    {/* Add your footer and any additional React components here */}
+   
   </div>
   );
   

@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import InfoPageTemplateTemp from '../Default Templates/InfoPageTemplateTemp';
 import '../App.css'
 import {Carousel} from 'react-responsive-carousel';
-import { NavLink } from 'react-router-dom';
+
 const Portable = () => {
   document.title = 'HES | Portable Offices';
   const title = 'Portable Offices';
@@ -59,7 +59,7 @@ const Portable = () => {
           selectedItem={selectedImageIndex}
           showStatus={false}
           showIndicators={false}
-          dynamicHeight={false} // Set to false to control the height
+          dynamicHeight={false} 
           centerMode={false}
           >
             {images.map((image, index) => (
@@ -114,7 +114,7 @@ const Portable = () => {
         <p>Ready to set up your flexible container office rental? <a href="/contactus">Contact us</a> today to discuss your requirements, request a quote, or explore customization options.</p>
       </section>
       
-      {/* Add your footer and any additional React components here */}
+      
     </div>
   );
   

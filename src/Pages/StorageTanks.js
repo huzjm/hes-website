@@ -112,15 +112,11 @@ const StorageTanks = () => {
       <p>Ready to safeguard your materials with our Storage Tanks? <a href="/contactus">Contact us</a> today to discuss your requirements, request a quote, or explore customization options.</p>
     </section>
     
-    {/* Add your footer and any additional React components here */}
+    
   </div>
   );
  
-  const subMenus = [
-    { label: 'Tanks', path: '/storage/tanks' },
-    { label: 'Pressure Vessels', path: '/storage/pressurevessel' },
-    // Add more submenu items if needed
-  ];
+  
 
   return (
    <div className='content'> <InfoPageTemplateTemp title={title} content={content} images={images}  mainPath='/storage'/></div>

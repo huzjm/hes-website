@@ -20,14 +20,17 @@ const ContactUs = () => {
     e.preventDefault();
 
     const { name, email, phone, subject, message } = formData;
+    const encodedMessage = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nPhone: ${phone}\nMessage: ${message}`);
+const whatsappLink = `https://wa.me/?text=${encodedMessage}`;
+window.open(whatsappLink, "_blank");
 
     // Send an email using SendGrid
-    const msg = {
-      to: 'recipient@example.com', // Replace with the recipient's email address
-      from: email,
-      subject: subject,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
-    };
+    // const msg = {
+    //   to: 'recipient@example.com', // Replace with the recipient's email address
+    //   from: email,
+    //   subject: subject,
+    //   text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
+    // };
 
   };
   return (

@@ -99,18 +99,11 @@ const ShopInShop= () => {
 
       
 
-      {/* Add more content */}
+    
     </div>
   );
   
-  // const subMenus = [
-  //   { label: 'Shell and Tube', path: '/heatexchanger/shellandtube' },
-  //   { label: 'Plate Fin', path: '/heatexchanger/platefin' },
-   
-    
-  //   // Add more submenu items if needed
-  // ];
-
+ 
   return (
    <div className='content'> <InfoPageTemplateTemp title={title} content={content} images={images}  mainPath='/shopinshop'/></div>
   );

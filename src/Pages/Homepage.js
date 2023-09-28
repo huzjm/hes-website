@@ -29,21 +29,7 @@ const Homepage = () => {
        
 </section>
 
-{/* <section id="project-carousel">
-          <h2>Project Portfolio:</h2>
-          <Carousel showArrows={true} infiniteLoop={true}>
-            <div>
-              <img src="/image/project1.jpg" alt="Project 1" />
-              <p className="legend">Project 1 Description</p>
-            </div>
-            <div>
-              <img src="/image/project2.jpg" alt="Project 2" />
-              <p className="legend">Project 2 Description</p>
-            </div>
-           
-          </Carousel>
-  </section> */}
-         
+
 <section id="information-cards">
   
   <div className="info-card">

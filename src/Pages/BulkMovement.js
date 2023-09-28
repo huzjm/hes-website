@@ -116,12 +116,7 @@ const BulkMovement = () => {
     </div>
   );
   
-  const subMenus = [
-    { label: 'Conveyors', path: '/bulkmovement/conveyors' },
-    { label: 'Hoppers', path: '/bulkmovement/hoppers' },
-    { label: 'Bucket Elevators', path: '/bulkmovement/bucketelevators' },
-    // Add more submenu items if needed
-  ];
+  
 
   return (
    <div className='content'> <InfoPageTemplateTemp title={title} content={content}  mainPath='/bulkmovement'/></div>
