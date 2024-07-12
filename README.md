@@ -13,23 +13,3 @@ Technologies Used
 Front-end: React, HTML, CSS
 Back-end: Node.js
 Database: Firebase
-
-Setup Instructions
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/company-website.git
-Navigate to the project directory:
-bash
-Copy code
-cd company-website
-Install dependencies:
-bash
-Copy code
-npm install
-Start the development server:
-bash
-Copy code
-npm start
-Usage
-Open your browser and navigate to http://localhost:3000 to see the application in action.
